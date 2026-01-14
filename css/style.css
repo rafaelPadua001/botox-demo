@@ -244,6 +244,14 @@ section h2 span {
     border-radius: 30px;
     box-shadow: 0 30px 70px rgba(0, 0, 0, 0.15);
 }
+.results-note {
+  display: block;
+  text-align: center;
+  margin-top: 14px;
+  font-size: 12px;
+  opacity: 0.6;
+}
+
 
 /* ---------------- DEPOIMENTOS ---------------- */
 .testimonials {
