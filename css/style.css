@@ -360,8 +360,8 @@ footer p {
 /* CTA INTELIGENTE */
 .floating-whatsapp {
   position: fixed;
-  bottom: 48px;
-  right: 12px;
+  bottom: 47px;
+  right: 10px;
   background: linear-gradient(135deg, #25D366, #1ebe5d);
   color: #fff;
   padding: 14px 22px;
