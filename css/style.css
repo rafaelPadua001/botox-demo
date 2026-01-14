@@ -54,8 +54,8 @@ filter: blur(70px);
 }
 
 header::before {
-    top: -180px;
-    left: -180px;
+    top: -420px;
+    left: -420px;
 }
 
 header::after {
