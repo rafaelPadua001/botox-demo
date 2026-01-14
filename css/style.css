@@ -42,8 +42,8 @@ header::before,
 header::after {
     content: "";
     position: absolute;
-    width: 360px;
-height: 360px;
+    width: 420px;
+height: 420px;
 filter: blur(70px);
 
     
