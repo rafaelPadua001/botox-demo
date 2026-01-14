@@ -27,14 +27,12 @@ body {
 
 /* ---------------- HERO ---------------- */
 header {
-    position: relative;
-    padding: 120px 0;
-    background:
-        radial-gradient(circle at 15% 20%, rgba(246, 177, 195, 0.45), transparent 55%),
-        radial-gradient(circle at 85% 80%, rgba(200, 162, 77, 0.25), transparent 55%),
-        linear-gradient(135deg, #fff, #fde2e4);
-    overflow: hidden;
+  background:
+    radial-gradient(circle at top left, rgba(246,177,195,0.35), transparent 45%),
+    radial-gradient(circle at bottom right, rgba(200,162,77,0.25), transparent 50%),
+    linear-gradient(135deg, var(--rose-light), #fff, var(--rose-light));
 }
+
 
 
 /* Rosa decorativo com blur */
