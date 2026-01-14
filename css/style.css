@@ -67,12 +67,15 @@ header::after {
     align-items: center;
     position: relative;
     z-index: 1;
+    justify-items: center;
+  text-align: center;
 }
 
 /* --------- ANIMAÇÃO TEXTO --------- */
 .hero-text {
     animation: fadeSlide 1.2s ease forwards;
     opacity: 0;
+    align-items: center;
 }
 
 @keyframes fadeSlide {
@@ -103,6 +106,8 @@ header::after {
     font-size: 1.15rem;
     line-height: 1.7;
     max-width: 480px;
+      margin-left: auto;
+  margin-right: auto;
 }
 
 .cta-btn {
