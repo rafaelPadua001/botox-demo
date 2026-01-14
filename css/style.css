@@ -10,7 +10,7 @@
     box-sizing: border-box;
 }
 
-body {
+html, body {
     margin: 0;
     font-family: "Helvetica Neue", Arial, sans-serif;
     background: #faf7f8;
@@ -29,11 +29,14 @@ body {
 
 /* ---------------- HERO ---------------- */
 header {
-  background:
-    radial-gradient(circle at top left, rgba(246,177,195,0.35), transparent 45%),
-    radial-gradient(circle at bottom right, rgba(200,162,77,0.25), transparent 50%),
-    linear-gradient(135deg, var(--rose-light), #fff, var(--rose-light));
+    position: relative;
+    overflow: hidden;
+    background:
+      radial-gradient(circle at top left, rgba(246,177,195,0.35), transparent 45%),
+      radial-gradient(circle at bottom right, rgba(200,162,77,0.25), transparent 50%),
+      linear-gradient(135deg, var(--rose-light), #fff, var(--rose-light));
 }
+
 
 
 
