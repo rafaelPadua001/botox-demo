@@ -30,6 +30,7 @@ html, body {
 
 /* ---------------- HERO ---------------- */
 header {
+    poaition: relative;
     overflow: hidden;
   background:
     radial-gradient(circle at top left, rgba(246,177,195,0.35), transparent 45%),
