@@ -29,8 +29,6 @@ body {
 
 /* ---------------- HERO ---------------- */
 header {
-    poaition: relative;
-    overflow: hidden;
   background:
     radial-gradient(circle at top left, rgba(246,177,195,0.35), transparent 45%),
     radial-gradient(circle at bottom right, rgba(200,162,77,0.25), transparent 50%),
