@@ -151,26 +151,23 @@ header::after {
 }
 /* SELO DE CONFIANÇA */
 .trust-badge {
-  max-width: 420px;
-  margin: 30px auto 0;
-  padding: 14px 20px;
-  border-radius: 14px;
-  background: rgba(255, 255, 255, 0.85);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-  text-align: center;
+  margin-top: 18px;
+  font-size: 0.95rem;
+  opacity: 0.85;
+  color: var(--dark);
 }
 
 .trust-badge span {
-  font-size: 1.2rem;
   font-weight: bold;
-  color: #c7a24c;
+  color: var(--gold);
+  font-size: 1.05rem;
 }
 
 .trust-badge p {
-  font-size: 0.9rem;
-  color: #555;
-  margin-top: 4px;
+  margin: 4px 0 0;
+  font-size: 0.85rem;
 }
+
 
 /* ---------------- SEÇÕES ---------------- */
 section {
