@@ -42,9 +42,9 @@ header::before,
 header::after {
     content: "";
     position: absolute;
-    width: 420px;
-height: 420px;
-filter: blur(70px);
+    width: 320px;
+height: 320px;
+filter: blur(80px);
 
     
     background: radial-gradient(circle, var(--rose-strong), transparent 70%);
@@ -54,13 +54,13 @@ filter: blur(70px);
 }
 
 header::before {
-    top: -420px;
-    left: -420px;
+    top: -200px;
+    left: -200px;
 }
 
 header::after {
-    bottom: -420px;
-    right: -420px;
+    bottom: -200px;
+    right: -200px;
 }
 
 .hero {
