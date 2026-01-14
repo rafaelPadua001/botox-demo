@@ -429,3 +429,9 @@ footer p {
         text-align: center;
     }
 }
+@media (min-width: 768px) {
+  .floating-whatsapp {
+    display: none;
+  }
+}
+
