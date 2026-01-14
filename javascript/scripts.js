@@ -15,3 +15,12 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', setText);
     setText();
   });
+
+document.querySelectorAll('.cta-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const wpp = document.querySelector('.floating-whatsapp');
+    if (wpp) wpp.style.display = 'none';
+  });
+});
+
+    
