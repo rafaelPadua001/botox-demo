@@ -361,7 +361,7 @@ footer p {
 .floating-whatsapp {
   position: fixed;
   bottom: 47px;
-  right: 8px;
+  right: 2px;
   background: linear-gradient(135deg, #25D366, #1ebe5d);
   color: #fff;
   padding: 14px 22px;
