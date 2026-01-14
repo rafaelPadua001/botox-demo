@@ -1,0 +1,261 @@
+:root {
+    --rose-light: #fde2e4;
+    --rose-strong: #f6b1c3;
+    --gold: #c8a24d;
+    --dark: #3a2e2e;
+    --white: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    background: #faf7f8;
+    color: var(--dark);
+    overflow-x: hidden;
+}
+
+/* ---------------- HERO ---------------- */
+header {
+    position: relative;
+    padding: 100px 20px;
+    background: linear-gradient(135deg,
+            var(--rose-light),
+            #fff,
+            var(--rose-light));
+}
+
+/* Rosa decorativo com blur */
+header::before,
+header::after {
+    content: "";
+    position: absolute;
+    width: 420px;
+    height: 420px;
+    background: radial-gradient(circle, var(--rose-strong), transparent 70%);
+    filter: blur(90px);
+    opacity: 0.45;
+    z-index: 0;
+}
+
+header::before {
+    top: -120px;
+    left: -120px;
+}
+
+header::after {
+    bottom: -140px;
+    right: -140px;
+}
+
+.hero {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 60px;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+/* --------- ANIMAÇÃO TEXTO --------- */
+.hero-text {
+    animation: fadeSlide 1.2s ease forwards;
+    opacity: 0;
+}
+
+@keyframes fadeSlide {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero h1 span {
+    background: linear-gradient(90deg, var(--gold), var(--rose-strong));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+    font-size: 1.15rem;
+    line-height: 1.7;
+    max-width: 480px;
+}
+
+.cta-btn {
+    display: inline-block;
+    margin-top: 35px;
+    padding: 16px 36px;
+    background: linear-gradient(135deg,
+            var(--rose-strong),
+            var(--gold));
+    color: white;
+    font-weight: bold;
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0 15px 40px rgba(246, 177, 195, 0.45);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 25px 60px rgba(246, 177, 195, 0.6);
+}
+
+.hero-img {
+    width: 100%;
+    border-radius: 28px;
+    /*box-shadow: 0 30px 70px rgba(0, 0, 0, 0.18); */
+    animation: imgFloat 6s ease-in-out infinite;
+}
+
+@keyframes imgFloat {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* ---------------- SEÇÕES ---------------- */
+section {
+    padding: 100px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 70px;
+}
+
+section h2 span {
+    color: var(--rose-strong);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: var(--white);
+    padding: 38px 26px;
+    border-radius: 24px;
+    text-align: center;
+    border: 1px solid rgba(246, 177, 195, 0.35);
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+.icon {
+    font-size: 2.4rem;
+    margin-bottom: 16px;
+    display: block;
+}
+
+/* ---------------- RESULTADOS ---------------- */
+.results img {
+    width: 100%;
+    border-radius: 30px;
+    box-shadow: 0 30px 70px rgba(0, 0, 0, 0.15);
+}
+
+/* ---------------- DEPOIMENTOS ---------------- */
+.testimonials {
+    background: linear-gradient(180deg, #fff, var(--rose-light));
+    border-radius: 40px;
+}
+
+.testimonials .card {
+    text-align: left;
+    position: relative;
+}
+
+.stars {
+    color: var(--gold);
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+}
+
+.testimonial-text {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 18px;
+}
+
+.client {
+    font-weight: bold;
+    color: var(--dark);
+    font-size: 0.95rem;
+}
+
+.client span {
+    display: block;
+    font-weight: normal;
+    opacity: 0.7;
+    font-size: 0.85rem;
+}
+
+/* ---------------- FOOTER ---------------- */
+footer {
+    background: linear-gradient(135deg, #3a2e2e, #1f1818);
+    color: white;
+    text-align: center;
+    padding: 90px 20px;
+    position: relative;
+}
+
+footer::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle, rgba(246, 177, 195, 0.25), transparent 70%);
+    filter: blur(120px);
+}
+
+footer h2,
+footer a,
+footer p {
+    position: relative;
+    z-index: 1;
+}
+
+footer h2 {
+    font-size: 2.3rem;
+    margin-bottom: 30px;
+}
+
+footer p {
+    margin-top: 30px;
+    opacity: 0.7;
+    font-size: 0.9rem;
+}
