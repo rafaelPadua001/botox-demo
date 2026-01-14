@@ -59,8 +59,8 @@ header::before {
 }
 
 header::after {
-    bottom: -180px;
-    right: -180px;
+    bottom: -420px;
+    right: -420px;
 }
 
 .hero {
