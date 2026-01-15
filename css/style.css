@@ -545,7 +545,11 @@ footer p {
     text-decoration: none;
 }
 
-
+@media (max-width: 480px) {
+    .card-svg {
+        align-items: flex-start;
+    }
+}
 @media (max-width: 768px) {
     .hero {
         grid-template-columns: 1fr;
