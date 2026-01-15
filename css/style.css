@@ -320,12 +320,10 @@ section h2 span {
 }
 
 .icon svg {
-    width: 28px;
-    height: 28px;
-    stroke: #c9a46b;   /* dourado / nude */
-    fill: none;
-    stroke-width: 1.6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
 }
+
 /* ---------------- RESULTADOS ---------------- */
 .results img {
     width: 100%;
