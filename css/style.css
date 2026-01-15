@@ -319,13 +319,24 @@ section h2 span {
     background: #fff;
 }
 
-.icon svg {
+.icon {
     width: 28px;
     height: 28px;
-    stroke: #c9a46b;
-    fill: none;
-    stroke-width: 1.6;
+    color: #c9a46b; /* dourado / nude */
+    flex-shrink: 0;
 }
+
+.icon svg {
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    display: block;
+}
+
 
 
 
