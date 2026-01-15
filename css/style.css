@@ -562,7 +562,28 @@ footer p {
     .divider-text {
         font-size: 1.2rem;
     }
+.divider-text::before,
+    .divider-text::after {
+        content: "";
+        flex: 1;
+        height: 3px;
+        opacity: 0.95;
+        background: linear-gradient(
+            to right,
+            rgba(250, 249, 249, 0),
+            rgba(10, 10, 10, 0.25),
+            rgba(3, 3, 3, 0)
+        );
+    }
 
+    .divider-text::after {
+        background: linear-gradient(
+            to left,
+            rgba(250, 249, 249, 0),
+            rgba(10, 10, 10, 0.25),
+            rgba(3, 3, 3, 0)
+        );
+    }
     .map-container {
              height: 300px;
          }
