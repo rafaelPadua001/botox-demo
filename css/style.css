@@ -185,7 +185,6 @@ header::after {
 .divider-text span,
 .divider-text {
     max-width: 100%;
-    word-break: break-word;
 }
 
 .hero p {
