@@ -162,6 +162,11 @@ divider-text::after {
             rgba(10, 10, 10, 0.25),
             rgba(3, 3, 3, 0))
 }
+.divider-text span,
+.divider-text {
+    max-width: 100%;
+    word-break: break-word;
+}
 
 .hero p {
     font-size: 1.15rem;
