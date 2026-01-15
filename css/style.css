@@ -580,10 +580,14 @@ footer p {
     }
 
     divider-text {
-        flex-direction: column;
+        grid-template-columns: 1fr;
         gap: 12px;
     }
 
+    .divider-line {
+        width: 120px;
+        margin: 0 auto;
+    }
     .divider-text::before,
     .divider-text::after {
         width: 120px;
