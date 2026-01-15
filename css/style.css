@@ -10,16 +10,38 @@
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     max-width: 100%;
     margin: 0;
-    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-family: 'IBM Plex Sans', sans-serif;
     background: #faf7f8;
     color: var(--dark);
     overflow-x: hidden;
     width: 100%;
 
 }
+
+a {
+     text-decoration: none;
+     color: inherit;
+ }
+
+  .btn {
+     display: inline-block;
+     background: #e7aabc ;
+     color: #fcfafb;
+     padding: 16px 38px;
+     border-radius: 6px;
+     font-weight: 600;
+     font-size: 1rem;
+     transition: .3s;
+ }
+
+ .btn:hover {
+     background: #ffbcd8;
+     color: #fdfcfd;
+ }
 
 .container {
     max-width: 1100px;
@@ -33,9 +55,9 @@ header {
     position: relative;
     overflow: hidden;
     background:
-      radial-gradient(circle at top left, rgba(246,177,195,0.35), transparent 45%),
-      radial-gradient(circle at bottom right, rgba(200,162,77,0.25), transparent 50%),
-      linear-gradient(135deg, var(--rose-light), #fff, var(--rose-light));
+        radial-gradient(circle at top left, rgba(246, 177, 195, 0.35), transparent 45%),
+        radial-gradient(circle at bottom right, rgba(200, 162, 77, 0.25), transparent 50%),
+        linear-gradient(135deg, var(--rose-light), #fff, var(--rose-light));
 }
 
 
@@ -47,12 +69,12 @@ header::after {
     content: "";
     position: absolute;
     width: 320px;
-height: 320px;
-filter: blur(80px);
+    height: 320px;
+    filter: blur(80px);
 
-    
+
     background: radial-gradient(circle, var(--rose-strong), transparent 70%);
-    
+
     opacity: 0.45;
     z-index: 0;
 }
@@ -76,6 +98,7 @@ header::after {
     align-items: center;
     position: relative;
     z-index: 1;
+    font-family: 'Source Serif 4', serif;
 }
 
 /* --------- ANIMAÇÃO TEXTO --------- */
@@ -101,6 +124,7 @@ header::after {
     font-size: 3rem;
     margin-bottom: 20px;
     line-height: 1.2;
+
 }
 
 .hero h1 span {
@@ -109,17 +133,46 @@ header::after {
     -webkit-text-fill-color: transparent;
 }
 
+.divider-text {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    text-align: center;
+    justify-content: flex-start;
+    font-family: 'Source Serif 4', serif;
+}
+
+.divider-text::before,
+.divider-text:after {
+    content: "";
+    flex: 1;
+    height: 3px;
+    opacity: 0.95;
+    background: linear-gradient(to right,
+            rgba(255, 0, 119, 0),
+            rgba(248, 89, 187, 0.25),
+            rgba(250, 249, 249, 0));
+}
+
+/* inverter gradiente a direita */
+divider-text::after {
+    max-width: 120px;
+    background: linear-gradient(rgba(250, 249, 249, 0),
+            rgba(10, 10, 10, 0.25),
+            rgba(3, 3, 3, 0))
+}
+
 .hero p {
     font-size: 1.15rem;
     line-height: 1.7;
     max-width: 480px;
 }
+
 .cta-note {
-  display: block;
-  margin-top: 10px;
-  font-size: 13px;
-  opacity: 0.7;
-  text-align: center;
+    font-size: 14px;
+    opacity: 0.7;
+    text-align: center;
+    padding: 2px 8px;
 }
 
 .cta-btn {
@@ -144,7 +197,7 @@ header::after {
 
 .hero-img {
     width: 100%;
-    max-width: 460px;
+    max-width: 800px;
     margin-left: auto;
     border-radius: 28px;
     /*box-shadow: 0 30px 70px rgba(0, 0, 0, 0.18); */
@@ -164,23 +217,24 @@ header::after {
         transform: translateY(0);
     }
 }
+
 /* SELO DE CONFIANÇA */
 .trust-badge {
-  margin-top: 18px;
-  font-size: 0.95rem;
-  opacity: 0.85;
-  color: var(--dark);
+    margin-top: 12px;
+    font-size: 0.95rem;
+    opacity: 0.85;
+    color: var(--dark);
 }
 
 .trust-badge span {
-  font-weight: bold;
-  color: var(--gold);
-  font-size: 1.05rem;
+    font-weight: bold;
+    color: var(--gold);
+    font-size: 1.05rem;
 }
 
 .trust-badge p {
-  margin: 4px 0 0;
-  font-size: 0.85rem;
+    margin: 2px 0 0;
+    font-size: 0.85rem;
 }
 
 
@@ -190,6 +244,20 @@ section {
     max-width: 1100px;
     margin: auto;
 }
+
+ .section-title {
+     text-align: center;
+     margin-bottom: 60px;
+ }
+
+ .section-title h2 {
+     font-size: 2.3rem;
+     margin-bottom: 10px;
+ }
+
+ .section-title p {
+     color: #aaa;
+ }
 
 .section-subtitle {
     text-align: center;
@@ -226,30 +294,42 @@ section h2 span {
     border: 1px solid rgba(246, 177, 195, 0.35);
     box-shadow: 0 18px 45px rgba(0, 0, 0, 0.06);
     transition: transform 0.3s ease;
+    
 }
 
 .card:hover {
     transform: translateY(-6px);
 }
 
-.icon {
-    font-size: 2.4rem;
-    margin-bottom: 16px;
-    display: block;
+.card-svg{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 20px;
+    border-radius: 16px;
+    background: #fff;
 }
 
+.icon svg {
+    width: 28px;
+    height: 28px;
+    stroke: #c9a46b;   /* dourado / nude */
+    fill: none;
+    stroke-width: 1.6;
+}
 /* ---------------- RESULTADOS ---------------- */
 .results img {
     width: 100%;
     border-radius: 30px;
     box-shadow: 0 30px 70px rgba(0, 0, 0, 0.15);
 }
+
 .results-note {
-  display: block;
-  text-align: center;
-  margin-top: 14px;
-  font-size: 12px;
-  opacity: 0.6;
+    display: block;
+    text-align: center;
+    margin-top: 14px;
+    font-size: 12px;
+    opacity: 0.6;
 }
 
 
@@ -336,6 +416,29 @@ section h2 span {
     opacity: 0.7;
 }
 
+ /* MAP */
+ .map-container {
+     width: 100%;
+     height: 420px;
+     border-radius: 16px;
+     overflow: hidden;
+     box-shadow: 0 10px 30px rgba(0, 0, 0, .25);
+     margin-top: 24px;
+ }
+
+ .map-container iframe {
+     width: 100%;
+     height: 100%;
+     border: 0;
+ }
+
+ .map-address {
+     margin-top: 12px;
+     text-align: center;
+     font-weight: 500;
+     opacity: .85;
+ }
+
 /* ---------------- FOOTER ---------------- */
 footer {
     background: linear-gradient(135deg, #3a2e2e, #1f1818);
@@ -343,6 +446,7 @@ footer {
     text-align: center;
     padding: 90px 20px;
     position: relative;
+    font-family: 'IBM Plex Sans', sans-serif;
 }
 
 footer::before {
@@ -374,23 +478,23 @@ footer p {
 /* CTA FLUTUANTE WHATSAPP */
 /* CTA INTELIGENTE */
 .floating-whatsapp {
-  position: fixed;
-  bottom: 47px;
-  right: 2px;
-  background: linear-gradient(135deg, #25D366, #1ebe5d);
-  color: #fff;
-  padding: 14px 22px;
-  border-radius: 40px;
-  font-weight: 600;
-  font-size: 0.95rem;
-  text-decoration: none;
-  box-shadow: 0 16px 36px rgba(37, 211, 102, 0.45);
-  z-index: 999;
-  transition: all 0.3s ease;
+    position: fixed;
+    bottom: 47px;
+    right: 2px;
+    background: linear-gradient(135deg, #25D366, #1ebe5d);
+    color: #fff;
+    padding: 14px 22px;
+    border-radius: 40px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-decoration: none;
+    box-shadow: 0 16px 36px rgba(37, 211, 102, 0.45);
+    z-index: 999;
+    transition: all 0.3s ease;
 }
 
 .floating-whatsapp:hover {
-  transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 
@@ -449,14 +553,22 @@ footer p {
         font-size: 1rem;
     }
 
+    .divider-text {
+        font-size: 1.2rem;
+    }
+
+    .map-container {
+             height: 300px;
+         }
+
     .cta-btn {
         width: 100%;
         text-align: center;
     }
 }
-@media (min-width: 768px) {
-  .floating-whatsapp {
-    display: none;
-  }
-}
 
+@media (min-width: 768px) {
+    .floating-whatsapp {
+        display: none;
+    }
+}
