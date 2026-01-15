@@ -320,9 +320,14 @@ section h2 span {
 }
 
 .icon svg {
-    stroke-linecap: round;
-    stroke-linejoin: round;
+    width: 28px;
+    height: 28px;
+    stroke: #c9a46b;
+    fill: none;
+    stroke-width: 1.6;
 }
+
+
 
 /* ---------------- RESULTADOS ---------------- */
 .results img {
