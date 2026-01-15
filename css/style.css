@@ -136,32 +136,34 @@ header::after {
 .divider-text {
     display: flex;
     align-items: center;
-    gap: 16px;
     text-align: center;
-    justify-content: flex-start;
-    font-family: 'Source Serif 4', serif;
-    flex-wrap: wrap;
+    gap: 16px;
+    line-height: 1.3;
 }
 
 .divider-text::before,
-.divider-text:after {
+.divider-text::after {
     content: "";
     flex: 1;
     height: 3px;
     opacity: 0.95;
-    background: linear-gradient(to right,
-            rgba(255, 0, 119, 0),
-            rgba(248, 89, 187, 0.25),
-            rgba(250, 249, 249, 0));
+    background: linear-gradient(
+        to right,
+        rgba(250, 249, 249, 0),
+        rgba(10, 10, 10, 0.25),
+        rgba(3, 3, 3, 0)
+    );
 }
 
-/* inverter gradiente a direita */
-divider-text::after {
-    max-width: 120px;
-    background: linear-gradient(rgba(250, 249, 249, 0),
-            rgba(10, 10, 10, 0.25),
-            rgba(3, 3, 3, 0))
+.divider-text::after {
+    background: linear-gradient(
+        to left,
+        rgba(250, 249, 249, 0),
+        rgba(10, 10, 10, 0.25),
+        rgba(3, 3, 3, 0)
+    );
 }
+
 .divider-text span,
 .divider-text {
     max-width: 100%;
