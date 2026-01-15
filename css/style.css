@@ -320,11 +320,12 @@ section h2 span {
 }
 
 .icon {
-    width: 28px;
-    height: 28px;
-    color: #c9a46b; /* dourado / nude */
-    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+    color: #c9a46b;
+    opacity: 0.85;
 }
+
 
 .icon svg {
     width: 100%;
