@@ -317,6 +317,7 @@ section h2 span {
     padding: 20px;
     border-radius: 16px;
     background: #fff;
+    gap: 16px;
 }
 
 .icon {
