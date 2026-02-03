@@ -214,14 +214,6 @@ header::after {
     animation: imgFloat 6s ease-in-out infinite;
 }
 
-.consultora-img {
-    width: 100%;
-    max-width: 280px;
-    height: auto;
-    margin: 0 auto;
-    display: block;
-}
-
 @keyframes imgFloat {
     0% {
         transform: translateY(0);
@@ -310,20 +302,6 @@ section h2 span {
             #fff,
             #fff4f6);
     border-radius: 60px;
-}
-
-.benefits .cta-btn {
-    display: block;
-    margin: 30px auto 10px;
-    text-align: center;
-    max-width: 520px;
-}
-
-.cta-trust {
-    text-align: center;
-    font-size: 0.95rem;
-    opacity: 0.8;
-    margin-bottom: 20px;
 }
 
 
@@ -668,11 +646,5 @@ footer .cta-btn {
 @media (min-width: 768px) {
     .floating-whatsapp {
         display: none;
-    }
-}
-
-@media (min-width: 768px) {
-    .consultora-img {
-        max-width: 360px;
     }
 }
